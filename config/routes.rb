@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'list#index'
+  root 'home#index'
+
+  resources :lists, only: [:index]
 end

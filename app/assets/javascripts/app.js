@@ -1,5 +1,6 @@
 var todoApp = angular.module('todoApp', [
     'ngRoute',
+    'ngResource',
     'todoControllers',
     'templates'
 ]);

@@ -1,1 +1,12 @@
-{{ list }}
+<form>
+  <input ng-model="keywords" name="keywords" type="text" autofocus>
+  <button ng-click="search(keywords)" class="btn btn-primary">Search</button>
+</form>
+
+<div ng-if="lists">
+  <ul>
+    <li ng-repeat="list in lists">
+      <h1>{{list.name}}</h1>
+    </li>
+  </ul>
+</div>
