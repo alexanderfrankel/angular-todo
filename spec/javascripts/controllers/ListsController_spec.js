@@ -1,4 +1,4 @@
-describe("TodoListCtrl", function() {
+describe("TodoListsCtrl", function() {
   var scope = null;
   var ctrl = null;
   var location = null;
@@ -20,7 +20,7 @@ describe("TodoListCtrl", function() {
         httpBackend.expectGET(request).respond(results);
       };
 
-      ctrl = $controller('TodoListCtrl', {$scope: scope, $location: location});
+      ctrl = $controller('TodoListsCtrl', {$scope: scope, $location: location});
     });
   };
 

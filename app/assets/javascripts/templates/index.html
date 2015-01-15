@@ -1,12 +1,14 @@
 <form>
   <input ng-model="keywords" name="keywords" type="text" autofocus>
   <button ng-click="search(keywords)" class="btn btn-primary">Search</button>
+  <button ng-click="newList()">New List</button>
 </form>
 
 <div ng-if="lists">
   <ul>
     <li ng-repeat="list in lists">
-      <h1>{{list.name}}</h1>
+    <h1><a href ng-click="view(list.id)">{{list.name}}</a></h1>
+    <button ng-click="edit(list.id)">Edit</button>
     </li>
   </ul>
 </div>
